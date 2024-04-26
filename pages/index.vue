@@ -23,6 +23,10 @@ sayHello();
 
 const { $hello } = useNuxtApp();
 $hello('nuxt')
+
+definePageMeta({
+  middleware: 'auth'
+})
 </script>
 
 <style lang="scss" scoped>
