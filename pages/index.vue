@@ -19,8 +19,10 @@ useHead({
 })
 
 const { sayHello } = useUtils();
-
 sayHello();
+
+const { $hello } = useNuxtApp();
+$hello('nuxt')
 </script>
 
 <style lang="scss" scoped>
