@@ -17,6 +17,10 @@ const color = ref("red");
 useHead({
   title: '首页'
 })
+
+const { sayHello } = useUtils();
+
+sayHello();
 </script>
 
 <style lang="scss" scoped>
